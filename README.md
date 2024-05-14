@@ -1,6 +1,6 @@
 ### Jules Udahemuka's Portfolio
 
-[![Ask Me Anything !](https://img.shields.io/badge/ask%20me-linkedin-1abc9c.svg)](https://www.linkedin.com/in/julesudahemuka/)
+[![Ask Me Anything !](https://img.shields.io/badge/ask%20me-linkedin-1abc9c.svg)](https://www.linkedin.com/in/jules-udahemuka/)
 [![Checkout X](https://img.shields.io/badge/twitter-yes-green.svg)](https://twitter.com/udaheju)
 [![Website shields.io](https://img.shields.io/badge/website-up-yellow)](http://julesudahemuka.github.io/)
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
