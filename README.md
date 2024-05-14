@@ -1,7 +1,5 @@
 ### Jules Udahemuka's Portfolio ⚡️
 
-> A data-driven decision-maker and innovator specializing in AI-driven solutions.
-
 [![Ask Me Anything !](https://img.shields.io/badge/ask%20me-linkedin-1abc9c.svg)](https://www.linkedin.com/in/julesudahemuka/)
 [![Checkout X](https://img.shields.io/badge/maintained-yes-green.svg)](https://twitter.com/udaheju)
 [![Website shields.io](https://img.shields.io/badge/website-up-yellow)](http://julesudahemuka.github.io/)
