@@ -26,7 +26,7 @@ I am a passionate AI enthusiast and a graduate student at Carnegie Mellon Univer
 - Computer Vision
 
 #### Currently Reading Research  📚
-- Check out the research papers I'm currently reading: [Research Dump](./research_dump)
+- Check out the research papers I'm currently reading: [Research](./research_dump)
 - Explore the books I'm currently diving into: [Book List](./book_list)
 
 #### Publications and Projects 📃
