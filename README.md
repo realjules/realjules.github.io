@@ -1,4 +1,4 @@
-### Jules Udahemuka's Portfolio ⚡️
+### Jules Udahemuka's Portfolio
 
 [![Ask Me Anything !](https://img.shields.io/badge/ask%20me-linkedin-1abc9c.svg)](https://www.linkedin.com/in/julesudahemuka/)
 [![Checkout X](https://img.shields.io/badge/maintained-yes-green.svg)](https://twitter.com/udaheju)
