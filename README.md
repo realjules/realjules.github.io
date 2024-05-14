@@ -10,34 +10,35 @@
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 ## About Me 📋
-As a data-driven decision-maker and innovator specializing in AI-driven solutions, I bring proven expertise in analytics, ML/AI, and process improvement. With a strong work ethic and leadership skills, I excel in project planning and execution. I am seeking a role that aligns with my passion for AI/ML, and analytics.
+I am a passionate AI enthusiast and a graduate student at Carnegie Mellon University, pursuing a Master of Science in Engineering Artificial Intelligence. My strong research interests lie in the captivating fields of multimodal learning and computer vision. Driven by a deep curiosity and an insatiable desire to explore these cutting-edge domains, I am constantly seeking opportunities to expand my knowledge and contribute to groundbreaking research projects. With a background in data-driven decision-making, process improvement, and expertise in analytics and ML/AI, I am well-positioned to tackle complex challenges, deliver innovative solutions, and collaborate with like-minded individuals to push the boundaries of what's possible in AI research.
 
 ## Education 🎓
-- Master of Science in Engineering Artificial Intelligence, Carnegie Mellon University Africa, Rwanda (Jul 23 – Jun 25)
-- Bachelor of Science in Water and Environmental Engineering, University of Rwanda – College of Science, and Technology, Rwanda (Sep 13 – Jun 17)
-
-## Professional Experience 💼
-- Data Scientist, Babylon Health, Rwanda (Jun 22 – Jul 23)
-- Business Intelligence Developer, BBOXX, Rwanda (Feb 20 – May 22) 
-- Data Specialist, One Acre Fund, Rwanda (May 17 – Jan 20)
+- Master of Science in Engineering AI, Carnegie Mellon University | 25'
+- Bachelor of Science in Environmental Engineering, University of Rwanda | 17'
 
 ## Skills 🛠️
-- Python – advanced
-- C++ & Data Structures – intermediate
-- Machine Learning – intermediate  
-- Deep Learning – intermediate
-- SQL – advanced (PostgreSQL, Redash, and Amazon Redshift)
-- BI tools (Power BI, and Tableau) – advanced
-- Analytics Engineering – advanced (dbt)
+- Python
+- C++ & Data Structures
+- Machine Learning & Deep Learning  
+- SQL (PostgreSQL, Redash, and Amazon Redshift)
+- BI tools (Power BI, and Tableau)
+- Analytics Engineering (dbt)
+- Research
 
-## Achievements 🏆
-- Volunteered as a Business Consultant with "Challenges Worldwide," a UK-aid-funded program in Rwanda (2018)
-- DEI Representative: Spearheaded DEI initiatives at One Acre Fund's Kigali office
-- Third-place finisher in the Nyungwe Marathon - 55K Ultra-marathon, 2023
+## Research Interests 🔬
+- Multimodal Learning
+- Computer Vision
+
+## Research Dump 📚
+Check out the research papers I'm currently reading: [Research Dump](./research_dump)
+
+## Books I'm Reading 📖
+Explore the books I'm currently diving into: [Book List](./book_list)
+
+## Publications and Projects 📃
+View my research publications and projects: [Publications and Projects](./publications_projects)
 
 ## Contact Info 📞
-- Email: udaheju@gmail.com
-- Phone: (+250) 787 641 302
 - LinkedIn: [julesudahemuka](https://www.linkedin.com/in/julesudahemuka/)
 
 ## Installation & Deployment 📦
@@ -51,19 +52,6 @@ As a data-driven decision-maker and innovator specializing in AI-driven solution
 * [GitHub Pages](https://pages.github.com/) - To host my static website (HTML, CSS, JS).
 * [Materialize](https://materializecss.com/) - A CSS framework to get Google's Material Design components.
 * [Typed.js](https://mattboldt.com/demos/typed-js/) - JavaScript Library
-
-## Contributing 💡
-#### Step 1
-- **Option 1**
-    - 🍴 Fork this repo!
-- **Option 2**
-    - 👯 Clone this repo to your local machine.
-
-#### Step 2
-- **Build your code** 🔨🔨🔨
-
-#### Step 3
-- 🔃 Create a new pull request.
 
 ## License 📄
 This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details.
