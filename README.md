@@ -29,17 +29,12 @@ I am a passionate AI enthusiast and a graduate student at Carnegie Mellon Univer
 - Multimodal Learning
 - Computer Vision
 
-## Research Dump 📚
-Check out the research papers I'm currently reading: [Research Dump](./research_dump)
-
-## Books I'm Reading 📖
-Explore the books I'm currently diving into: [Book List](./book_list)
+## Currently Reading Research  📚
+- Check out the research papers I'm currently reading: [Research Dump](./research_dump)
+- Explore the books I'm currently diving into: [Book List](./book_list)
 
 ## Publications and Projects 📃
 View my research publications and projects: [Publications and Projects](./publications_projects)
-
-## Contact Info 📞
-- LinkedIn: [julesudahemuka](https://www.linkedin.com/in/julesudahemuka/)
 
 ## Installation & Deployment 📦
 - Clone the repository and modify the content of `index.html` according to your requirement.
@@ -47,11 +42,6 @@ View my research publications and projects: [Publications and Projects](./public
 - I highly recommend using [GitHub Pages](https://pages.github.com/) to deploy the website.
 - To deploy your website, first you need to create a GitHub repository with the name `<your-github-username>.github.io`. Please don't use any other name.
 - Push the generated code to the `master` branch of this repository.
-
-## Tools Used 🛠️
-* [GitHub Pages](https://pages.github.com/) - To host my static website (HTML, CSS, JS).
-* [Materialize](https://materializecss.com/) - A CSS framework to get Google's Material Design components.
-* [Typed.js](https://mattboldt.com/demos/typed-js/) - JavaScript Library
 
 ## License 📄
 This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details.
