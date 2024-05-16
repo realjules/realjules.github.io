@@ -56,6 +56,50 @@
             display: inline-block;
             vertical-align: top;
         }
+        .filter-buttons {
+            margin-bottom: 20px;
+        }
+
+        .filter-btn {
+            background-color: #e7e7e7;
+            border: none;
+            color: #333;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .filter-btn.active {
+            background-color: #333;
+            color: white;
+        }
+
+        .project-card {
+            background-color: #f1f1f1;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: none; /* Initially hide all project cards */
+        }
+
+        .project-card.show {
+            display: block; /* Show project cards that match the filter */
+        }
+
+        .project-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .project-links a {
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+        }
     </style>
 </head>
 <body>
@@ -73,6 +117,7 @@
     </header>
     <nav>
         <a href="#about-me">About Me</a>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#now-reading">Now Reading</a>
         <a href="/resume/jules_udahemuka_resume.pdf"><span>Resume</span></a>
@@ -102,9 +147,46 @@
                 </ul>
             </div>
         </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>Describe your research interests and projects.</p>
+        </section>
         <section id="projects">
             <h2>Projects</h2>
-            <p>Describe your research interests and projects.</p>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="my-research">My Projects</button>
+                <button class="filter-btn" data-filter="collaborative">Collaborative</button>
+            </div>
+            <div class="project-cards">
+                <div class="project-card my-research collaborative">
+                    <h3>AFIDs-macaca</h3>
+                    <p>A standardized framework for evaluating anatomical correspondence between primate brains</p>
+                    <img src="path/to/project-image.jpg" alt="Project Image">
+                    <div class="project-links">
+                        <a href="#">Website</a>
+                        <a href="#">Code</a>
+                        <a href="#">Poster</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+                <div class="project-card my-research">
+                    <h3>fMRI mapping of anesthesia-induced burst-suppression across species</h3>
+                    <p>My main PhD project.</p>
+                    <img src="path/to/project-image.jpg" alt="Project Image">
+                    <div class="project-links">
+                        <a href="#">Publication</a>
+                        <a href="#">Code</a>
+                        <a href="#">Data</a>
+                        <a href="#">Talk</a>
+                    </div>
+                </div>
+                <div class="project-card collaborative">
+                    <h3>RheMAP</h3>
+                    <p>Non-linear warps between common rhesus macaque brain templates.</p>
+                    <img src="path/to/project-image.jpg" alt="Project Image">
+                </div>
+            </div>
         </section>
         <section id="now-reading">
             <h2>Now Reading</h2>
@@ -115,10 +197,7 @@
                 </li>
             </ul>
         </section>
-        <!-- Add more sections for other content -->
     </main>
-    <!-- <footer>
-        <p>&copy; Jules Udahemuka</p>
-    </footer> -->
+    <script src="script.js"></script>
 </body>
 </html>
