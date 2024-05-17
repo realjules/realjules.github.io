@@ -100,6 +100,26 @@
             text-decoration: none;
             color: #333;
         }
+
+        .skill-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skill-list li {
+            display: inline-block;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            vertical-align: middle;
+        }
+
+        .skill-list li img {
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
     </style>
 </head>
 <body>
@@ -149,17 +169,32 @@
         </section>
         <section id="skills">
             <h2>Skills</h2>
-            <p>Describe your research interests and projects.</p>
+            <ul class="skill-list">
+                <li><img src="icons/python.png" alt="Python"> Python</li>
+                <li><img src="icons/tensorflow.svg" alt="TensorFlow"> TensorFlow</li>
+                <li><img src="icons/pytorch.svg" alt="PyTorch"> PyTorch</li>
+                <li><img src="icons/opencv.png" alt="OpenCV"> OpenCV</li>
+                <li><img src="icons/git.svg" alt="Git"> Git</li>
+                <li><img src="icons/lmms.svg" alt="Linux"> Transformers</li>
+                <li><img src="icons/docker.svg" alt="Docker"> Docker</li>
+                <li><img src="icons/ml.png" alt="Machine Learning"> Machine Learning</li>
+                <li><img src="icons/deep-learning.svg" alt="Deep Learning"> Deep Learning</li>
+                <li><img src="icons/sql.png" alt="SQL"> SQL</li>
+                <li><img src="icons/powerbi.png" alt="Power BI"> Power BI</li>
+                <li><img src="icons/dbt.svg" alt="dbt"> dbt</li>
+                <li><img src="icons/tableau.svg" alt="Tableau"> Tableau</li>
+                <li><img src="icons/research.svg" alt="Research"> Research</li>
+            </ul>
         </section>
         <section id="projects">
             <h2>Projects</h2>
             <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="my-research">My Projects</button>
                 <button class="filter-btn" data-filter="collaborative">Collaborative</button>
             </div>
             <div class="project-cards">
-                <div class="project-card my-research collaborative">
+                <div class="project-card my-research collaborative show">
                     <h3>AFIDs-macaca</h3>
                     <p>A standardized framework for evaluating anatomical correspondence between primate brains</p>
                     <img src="path/to/project-image.jpg" alt="Project Image">
@@ -170,7 +205,7 @@
                         <a href="#">Twitter</a>
                     </div>
                 </div>
-                <div class="project-card my-research">
+                <div class="project-card my-research show">
                     <h3>fMRI mapping of anesthesia-induced burst-suppression across species</h3>
                     <p>My main PhD project.</p>
                     <img src="path/to/project-image.jpg" alt="Project Image">
@@ -181,7 +216,7 @@
                         <a href="#">Talk</a>
                     </div>
                 </div>
-                <div class="project-card collaborative">
+                <div class="project-card collaborative show">
                     <h3>RheMAP</h3>
                     <p>Non-linear warps between common rhesus macaque brain templates.</p>
                     <img src="path/to/project-image.jpg" alt="Project Image">
