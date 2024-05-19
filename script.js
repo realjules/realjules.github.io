@@ -1,9 +1,7 @@
 // Get the navigation bar element
 const navBar = document.querySelector('nav');
-
 // Get the offset position of the navigation bar
 const navBarOffset = navBar.offsetTop;
-
 // Get the title element
 const titleElement = document.querySelector('header h1');
 

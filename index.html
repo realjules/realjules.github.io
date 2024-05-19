@@ -6,14 +6,16 @@
     <meta name="description" content="Personal website of Jules Udahemuka, AI Researcher specializing in Multimodal Learning and Computer Vision.">
     <meta name="keywords" content="Jules Udahemuka, AI Research, Multimodal Learning, Computer Vision, Open Science">
     <style>
-        /* Add your CSS styles here */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center; /* Center the content */
-            font-size: 13px; /* Slightly smaller font size */
-            line-height: 1.3; /* Reduced line height */
+            text-align: center;
+            font-size: 15px; /* Increased font size */
+            line-height: 1.5; /* Adjusted line height */
+        }
+        header, nav, main, section {
+            padding: 10px; /* Increased padding for better spacing */
         }
         header {
             background-color: #333;
@@ -46,11 +48,7 @@
         section {
             margin-bottom: 10px; /* Reduced margin */
         }
-        /* footer {
-            background-color: #333;
-            color: #fff;
-            padding: 0.5px; Reduced padding
-        } */
+
         .social-icons a {
             display: inline-block;
             margin-right: 6px; /* Reduced margin */
@@ -92,7 +90,7 @@
         .project-card {
             background-color: #f1f1f1;
             padding: 5px;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             display: none; /* Initially hide all project cards */
         }
 
@@ -107,7 +105,7 @@
 
         .project-links a {
             display: inline-block;
-            margin-right: 10px;
+            margin-right: 5px;
             text-decoration: none;
             color: #333;
         }
@@ -166,14 +164,14 @@
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#now-reading">Now Reading</a>
-        <a href="/resume/jules_udahemuka_resume.pdf"><span>Resume</span></a>
+        <a href="https://github.com/julesuda/jules.github.io/blob/main/resume/jules_udahemuka_resume.pdf" target="_blank" rel="noopener noreferrer"><span>Resume</span></a>
     </nav>
     <main>
         <section id="about-me">
             <h2>About Me</h2>
-            <p>I'm Niko, a medical doctor turned neuroscientist and image analyst. Since October 2022, I work as a Research Software Engineer at the Sainsbury Wellcome Centre and Gatsby Computational Neuroscience Unit.</p>
-            <p>I completed my PhD at the Functional Imaging Lab of the German Primate Center, where I studied the effects of anesthesia on brain function using neuroimaging techniques, including functional Magnetic Resonance Imaging (fMRI) and in vivo 2-photon calcium imaging.</p>
-            <p>I care about promoting open, collaborative, and reproducible science. In my free time, you will find me dancing to swing music and trying to play the saxophone.</p>
+            <p>I am Jules Udahemuka, an AI researcher specializing in machine learning, computer vision, and multimodal learning. Currently, I am pursuing a Master of Science in Engineering Artificial Intelligence at Carnegie Mellon University Africa.</p>
+            <p>My expertise includes advanced skills in Python, SQL, and business intelligence tools such as Power BI and Tableau. I am particularly focused on developing innovative AI solutions and have a strong interest in advancing the fields of computer vision and multimodal learning.</p>
+            <p>I am passionate about leveraging my skills and knowledge to contribute to the advancement of AI technology and am committed to promoting open, collaborative, and reproducible science.</p>
             <div class="interests">
                 <h3>Interests</h3>
                 <ul>
@@ -202,7 +200,7 @@
                 <li><img src="icons/opencv.png" alt="OpenCV"> OpenCV</li>
                 <li><img src="icons/git.svg" alt="Git"> Git</li>
                 <li><img src="icons/lmms.svg" alt="Linux"> Transformers</li>
-                <li><img src="icons/docker.svg" alt="Docker"> Docker</li>
+                <!-- <li><img src="icons/docker.svg" alt="Docker"> Docker</li> -->
                 <li><img src="icons/ml.png" alt="Machine Learning"> Machine Learning</li>
                 <li><img src="icons/deep-learning.svg" alt="Deep Learning"> Deep Learning</li>
                 <li><img src="icons/sql.png" alt="SQL"> SQL</li>
@@ -223,22 +221,22 @@
                 <div class="project-card my-research collaborative show">
                     <h4>AFIDs-macaca</h4>
                     <p>A standardized framework for evaluating anatomical correspondence between primate brains.</p>
-                    <img src="project-image/project-image.png" alt="Project Image" loading="lazy">
+                    <!-- <img src="project-image/project-image.png" alt="Project Image" loading="lazy"> -->
                     <div class="project-links">
                         <a href="#" aria-label="Code for AFIDs-macaca project">Code</a>
                         <a href="#" aria-label="Data for AFIDs-macaca project">Data</a>
                     </div>
                 </div>
                 <div class="project-card my-research show">
-                    <h3>My main PhD project.</h3>
-                    <p>fMRI mapping of anesthesia-induced burst-suppression across species.</p>
-                    <img src="project-image/project-image.png" alt="Project Image" loading="lazy">
+                    <h3>My main PhD project</h3>
+                    <p>fMRI mapping of anesthesia-induced burst-suppression across species. This project involved extensive data collection and analysis, providing insights into...</p>
+                    <!-- <img src="project-image/project-image.png" alt="fMRI mapping project image" loading="lazy"> -->
                     <div class="project-links">
-                        <a href="#" aria-label="Code for AFIDs-macaca project">Code</a>
-                        <a href="#" aria-label="Data for AFIDs-macaca project">Data</a>
+                        <a href="#" aria-label="Code for fMRI project">Code</a>
+                        <a href="#" aria-label="Data for fMRI project">Data</a>
                     </div>
                 </div>
-                <div class="project-card collaborative show">
+                <!-- <div class="project-card collaborative show">
                     <h3>RheMAP</h3>
                     <p>Non-linear warps between common rhesus macaque brain templates.</p>
                     <img src="project-image/project-image.png" alt="Project Image" loading="lazy">
@@ -269,47 +267,47 @@
                 <div class="project-card collaborative show">
                     <h3>RheMAP</h3>
                     <p>.</p>
-                    <!-- <img src="path/to/project-image.jpg" alt="Project Image"> -->
+                    <img src="path/to/project-image.jpg" alt="Project Image">
                     <div class="project-links">
-                        <!-- <a href="#">Publication</a> -->
+                        <a href="#">Publication</a>
                         <a href="#">Code</a>
                         <a href="#">Data</a>
-                        <!-- <a href="#">Talk</a> -->
+                        <a href="#">Talk</a>
                     </div>
                 </div>
                 <div class="project-card collaborative show">
                     <h3>RheMAP</h3>
                     <p>Non-linear warps between common rhesus macaque brain templates.</p>
-                    <!-- <img src="path/to/project-image.jpg" alt="Project Image"> -->
+                    <img src="path/to/project-image.jpg" alt="Project Image">
                     <div class="project-links">
-                        <!-- <a href="#">Publication</a> -->
+                        <a href="#">Publication</a>
                         <a href="#">Code</a>
                         <a href="#">Data</a>
-                        <!-- <a href="#">Talk</a> -->
+                        <a href="#">Talk</a>
                     </div>
                 </div>
                 <div class="project-card collaborative show">
                     <h3>RheMAP</h3>
                     <p>Non-linear warps between common rhesus macaque brain templates.</p>
-                    <!-- <img src="path/to/project-image.jpg" alt="Project Image"> -->
+                    <img src="path/to/project-image.jpg" alt="Project Image">
                     <div class="project-links">
-                        <!-- <a href="#">Publication</a> -->
+                        <a href="#">Publication</a>
                         <a href="#">Code</a>
                         <a href="#">Data</a>
-                        <!-- <a href="#">Talk</a> -->
+                        <a href="#">Talk</a>
                     </div>
                 </div>
                 <div class="project-card collaborative show">
                     <h3>RheMAP</h3>
                     <p>Non-linear warps between common rhesus macaque brain templates.</p>
-                    <!-- <img src="path/to/project-image.jpg" alt="Project Image"> -->
+                    <img src="path/to/project-image.jpg" alt="Project Image">
                     <div class="project-links">
-                        <!-- <a href="#">Publication</a> -->
+                        <a href="#">Publication</a>
                         <a href="#">Code</a>
                         <a href="#">Data</a>
-                        <!-- <a href="#">Talk</a> -->
+                        <a href="#">Talk</a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
         <section id="now-reading">
@@ -333,7 +331,7 @@
                 <a href="#">Code</a>
               </div>
             </div>
-            <div class="reading-card">
+            <!-- <div class="reading-card">
               <h3><a href="https://example.com/self-supervised-learning-cv" target="_blank">Advances in Self-Supervised Learning for Computer Vision</a></h3>
               <p>Liam Wilson, Olivia Taylor, Ethan Harris, Ava Martin. 2022.</p>
               <div class="reading-links">
@@ -363,7 +361,7 @@
               <div class="reading-links">
                 <a href="#">Paper</a>
                 <a href="#">Talk</a>
-              </div>
+              </div> -->
             </div>
         </section>
     </main>
