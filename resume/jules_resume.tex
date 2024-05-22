@@ -1,0 +1,208 @@
+%-------------------------
+% Resume in Latex
+% Author : Jules Udahemuka
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://realjules.github.io/}{\Large Jules Udahemuka}} & Email : \href{mailto:udaheju@gmail.com}{udaheju@gmail.com}\\
+  \href{https://realjules.github.io/}{https://realjules.github.io/} & Mobile : \href{tel:+250787641302}{(+250)78-764-102}\\
+  \href{https://github.com/realjules}{https://github.com/realjules}
+\end{tabular*}
+
+%-----------SUMMARY-----------------
+\section{Summary}
+  % \resumeSubHeadingListStart
+ {I am a data-driven decision-maker specializing in AI-driven solutions, with expertise in analytics, ML/AI, and process improvement. My research in Multimodal Learning and Computer Vision includes developing algorithms that integrate visual and textual data, improving object detection with cross-modal data fusion, and applying deep learning to real-time image analysis. This work has applications in autonomous driving, medical imaging, and video surveillance. I seek a role that aligns with my passion for AI/ML and analytics.  }
+ 
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Carnegie Mellon University}{Rwanda, Africa Campus}
+      {Master of Science in Engineering Artificial Intelligence;  GPA: 3.7}{Aug. 2023 -- May. 2025}
+    \resumeSubheading
+      {University of Rwanda}{Rwanda, College of Science and Tech}
+      {Bachelor of Science in Environmental Engineering}  {Aug. 2013 -- July. 2017}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Babylon Health}{Rwanda}
+      {Data Scientist}{Jun 2022 - Jul 2023}
+      \resumeItemListStart
+        \resumeItem{Machine Learning for Revenue Optimization}
+          {Led strategies and analyses across business departments, leveraging machine learning to optimize clinical operations, resulting in a 13.4 revenue increase by minimizing unpaid consultations.}
+        \resumeItem{Decreased Fraudulent Activities}
+          {Decreased fraudulent consultations by 99.9 through data-driven performance management strategies, defining metrics, and analyzing various data points.}
+      \resumeItem{Build Dashboards:}
+          {Developed custom dashboards, enabling teams to make informed day-to-day performance decisions and actively combat fraud}
+      \resumeItemListEnd
+      
+%-------------------------------------------
+
+    \resumeSubheading
+      {Bboxx}{Rwanda}
+      {Business Intelligence Developer}{Feb 2020 - May 2022}
+      \resumeItemListStart
+        \resumeItem{Developing Dashboard}
+          {Developed 5 Power BI dashboards with over 40 worksheets, aiding management, and employees in making data-informed business decisions.}
+        \resumeItem{Designing and Building Data Warehouse}
+          {Played a key role in designing and implementing robust ETL processes, enhancing decentralized data integration, and ensuring data accuracy. Additionally, led the development and testing of a new dbt-based ETL process, streamlining data population from diverse sources and systems.}
+        \resumeItem{Won Internal Hackathon}
+          {Partnered on an internal hackathon machine learning project, predicting defaulters, and achieving a 14.2 reduction.}
+        % \resumeItem{Data Collection}
+        %   {Designed the internal survey and crowd-sourcing platform which allowed for creating various tasks for crowd-sourcing or embedding surveys across the Coursera platform.}
+        % \resumeItem{Dev Environment}
+        %   {Analytics environment based on docker and AWS, standardized the python and R dependencies. Wrote the core libraries that are shared by all data scientists.}
+        % \resumeItem{Data Warehousing}
+        %   {Setup, schema design, and management of Amazon Redshift. Built an internal app for access to the data using a web interface. Dataduct integration for daily ETL injection into Redshift.}
+      %   \resumeItem{Recommendations}
+      %     {Core service for all recommendation systems at Coursera, currently used on the homepage and throughout the content discovery process. Worked on both offline training and online serving.}
+      %   \resumeItem{Content Discovery}
+      %     {Improved content discovery by building a new onboarding experience on Coursera. Using this to personalize the search and browse experience. Also worked on ranking and indexing improvements.}
+      %   \resumeItem{Course Dashboards}
+      %     {Instructor dashboards and learner surveying tools, which helped instructors run their classes better by providing data on Assignments and Learner Activity.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {One Acre Fund}{Rwanda}
+      {Data Specialist}{May 2017 - Jun 2020}
+      \resumeItemListStart
+        \resumeItem{Increase Product Adoption}
+          {Spearheaded data-driven marketing strategies, increasing adoption rates by 17.7 in six months through research and segmentation strategies.}
+        \resumeItem{Operation Optimization}
+          {Optimized retail expansion efforts, overseeing growth from 4 to 100 stores across the country in two years, supported by decentralized data gathering tools and live data visualization tools.}
+      \resumeItem{Increased Retention}
+          {Implemented retention initiatives, raising retention rates to 93 from 82 during the COVID-19 lockdown period.}
+      \resumeItemListEnd
+
+  %   \resumeSubheading
+  %     {Georgia Institute of Technology}{Atlanta, GA}
+  %     {Research and Teaching Assistant}{Jan 2012 - Dec 2013}
+  %     \resumeItemListStart
+  %       \resumeItem{Research Assistant - Machine Learning}
+  %         {Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the Python. library QSTK.}
+  %       \resumeItem{Teaching Assistant - Computational Investing}
+  %         {The online course on Coursera, had more than 100,000 students enrolled. It was featured on the 11 Alive News and the Atlanta Journal-Constitution. Involved in creating assignments, and exams, and conducting recitation sessions. Also taught the on-campus version of the course.}
+  %     \resumeItemListEnd
+
+  % \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{QuantSoftware Toolkit}
+      {Open source Python library for financial data analysis and machine learning for finance.}
+    \resumeSubItem{Github Visualization}
+      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+    \resumeSubItem{Recommendation System}
+      {Music and Movie recommender systems using collaborative filtering on public datasets.}
+    \resumeSubItem{Mac Setup}
+      {Book that gives step-by-step instructions on setting up developer environment on Mac OS.}
+      
+  \resumeSubHeadingListEnd
+
+
+% -------- SKILLS------------
+\section{Skills}
+   {Python, C++, SQL, TensorFlow, PyTorch, OpenCV, Transformers, dbt, Power BI, Tableau
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
