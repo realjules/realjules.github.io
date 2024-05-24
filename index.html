@@ -143,6 +143,16 @@
             margin-right: 5px;
             vertical-align: middle;
         }
+        .info-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            font-size: 14px;
+        }
+
+        .interests, .education {
+            flex: 1;
+        }
         
     </style>
 </head>
@@ -169,26 +179,26 @@
     <main>
         <section id="about-me">
             <h2>About Me</h2>
-            <p>I am Jules Udahemuka, an AI researcher specializing in machine learning, computer vision, and multimodal learning. Currently, I am pursuing a Master of Science in Engineering Artificial Intelligence at Carnegie Mellon University Africa.</p>
-            <p>My expertise includes advanced skills in Python, SQL, and business intelligence tools such as Power BI and Tableau. I am particularly focused on developing innovative AI solutions and have a strong interest in advancing the fields of computer vision and multimodal learning.</p>
-            <p>I am passionate about leveraging my skills and knowledge to contribute to the advancement of AI technology and am committed to promoting open, collaborative, and reproducible science.</p>
-            <div class="interests">
-                <h3>Interests</h3>
-                <ul>
-                    <li>Multimodal Learning</li>
-                    <li>Computer Vision</li>
-                    <li>Foundation Research</li>
-                    <li>Open Science</li>
-                    <!-- <li>Software</li> -->
-                </ul>
-            </div>
-            <div class="education">
-                <h3>Education</h3>
-                <ul>
-                    <li>&#127891; MSc in Engineering AI, May 2017 - Sep 2021<br>Carnegie Mellon University</li>
-                    <li>&#127891; Environmental Engineering, Sep 2015 - Apr 2017<br>University of Rwanda</li>
-                    <!-- <li>&#127891; Medical Degree, Sep 2009 - Jul 2015<br>Aristotle University of Thessaloniki</li> -->
-                </ul>
+            <p>Hello! I'm Jules Udahemuka, an AI researcher with a focus on multimodal learning and computer vision. I'm pursuing a Master's degree in Engineering Artificial Intelligence at Carnegie Mellon University.</p>
+            <p>My expertise lies in developing innovative AI solutions using advanced skills in Python, SQL, and business intelligence tools like Power BI and Tableau. I'm passionate about pushing the boundaries of computer vision and multimodal learning to create impactful technologies.</p>
+            <p>I strongly believe in the power of open, collaborative, and reproducible science. By sharing knowledge and working together, we can accelerate the progress of AI and make a positive difference in the world.</p>
+            <div class="info-container">
+                <div class="interests">
+                    <h3>Interests</h3>
+                    <ul>
+                        <li>Multimodal Learning</li>
+                        <li>Computer Vision</li>
+                        <li>Foundation Research</li>
+                        <li>Open Science</li>
+                    </ul>
+                </div>
+                <div class="education">
+                    <h3>Education</h3>
+                    <ul>
+                        <li>&#127891; MSc in Engineering AI, May 2017 - Sep 2021<br>Carnegie Mellon University</li>
+                        <li>&#127891; Environmental Engineering, Sep 2015 - Apr 2017<br>University of Rwanda</li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section id="skills">
@@ -219,95 +229,29 @@
             </div>
             <div class="project-cards">
                 <div class="project-card my-research collaborative show">
-                    <h4>AFIDs-macaca</h4>
-                    <p>A standardized framework for evaluating anatomical correspondence between primate brains.</p>
-                    <!-- <img src="project-image/project-image.png" alt="Project Image" loading="lazy"> -->
+                    <h4>Drones Computer Vision</h4>
+                    <p>Developed an open-source project for analyzing drone footage and applying computer vision techniques like YOLO and Faster R-CNN for real-time object detection and tracking.</p>
                     <div class="project-links">
-                        <a href="#" aria-label="Code for AFIDs-macaca project">Code</a>
-                        <a href="#" aria-label="Data for AFIDs-macaca project">Data</a>
+                        <a href="https://github.com/realjules/drone_vision" aria-label="Code for Drone Vision">Code</a>
+                        <a href="https://github.com/realjules/drone_vision" aria-label="Data for Drone Vision">Data</a>
                     </div>
                 </div>
                 <div class="project-card my-research show">
-                    <h3>My main PhD project</h3>
-                    <p>fMRI mapping of anesthesia-induced burst-suppression across species. This project involved extensive data collection and analysis, providing insights into...</p>
-                    <!-- <img src="project-image/project-image.png" alt="fMRI mapping project image" loading="lazy"> -->
+                    <h3>Digital Twin for Climate Change</h3>
+                    <p>Created a digital twin framework using AI and simulation to model and visualize the potential impacts of climate change on the African continent.</p>
                     <div class="project-links">
-                        <a href="#" aria-label="Code for fMRI project">Code</a>
-                        <a href="#" aria-label="Data for fMRI project">Data</a>
+                        <a href="https://github.com/realjules/africa_climate_simulation" aria-label="Code for Digital Twin">Code</a>
+                        <a href="https://github.com/realjules/africa_climate_simulation" aria-label="Data for Digital Twin">Data</a>
                     </div>
                 </div>
-                <!-- <div class="project-card collaborative show">
-                    <h3>RheMAP</h3>
-                    <p>Non-linear warps between common rhesus macaque brain templates.</p>
-                    <img src="project-image/project-image.png" alt="Project Image" loading="lazy">
+                <div class="project-card my-research show">
+                    <h3>Securing USSD Systems with Machine Learning</h3>
+                    <p>Implemented unsupervised anomaly detection algorithms and supervised fraud prediction models to enhance the security of USSD mobile money systems in Africa.</p>
                     <div class="project-links">
-                        <a href="#" aria-label="Code for AFIDs-macaca project">Code</a>
-                        <a href="#" aria-label="Data for AFIDs-macaca project">Data</a>
+                        <a href="https://github.com/realjules/ussd_fraud_prediction" aria-label="Code for USSD security">Code</a>
+                        <a href="https://github.com/realjules/ussd_fraud_prediction" aria-label="Data for USSD security">Data</a>
                     </div>
                 </div>
-                <div class="project-card my-research collaborative show">
-                    <h3>AFIDs-macaca</h3>
-                    <p>A standardized framework for evaluating anatomical correspondence between primate brains.</p>
-                    <img src="project-image/project-image.png" alt="Project Image" loading="lazy">
-                    <div class="project-links">
-                        <a href="#" aria-label="Code for AFIDs-macaca project">Code</a>
-                        <a href="#" aria-label="Data for AFIDs-macaca project">Data</a>
-                    </div>
-                </div>
-                <div class="project-card my-research collaborative show">
-                    <h3>AFIDs-macaca</h3>
-                    <p>A standardized framework for evaluating anatomical correspondence between primate brains.</p>
-                    <img src="project-image/project-image.png" alt="Project Image" loading="lazy">
-                    <div class="project-links">
-                        <a href="#" aria-label="Code for AFIDs-macaca project">Code</a>
-                        <a href="#" aria-label="Data for AFIDs-macaca project">Data</a>
-                    </div>
-                </div>
-
-                <div class="project-card collaborative show">
-                    <h3>RheMAP</h3>
-                    <p>.</p>
-                    <img src="path/to/project-image.jpg" alt="Project Image">
-                    <div class="project-links">
-                        <a href="#">Publication</a>
-                        <a href="#">Code</a>
-                        <a href="#">Data</a>
-                        <a href="#">Talk</a>
-                    </div>
-                </div>
-                <div class="project-card collaborative show">
-                    <h3>RheMAP</h3>
-                    <p>Non-linear warps between common rhesus macaque brain templates.</p>
-                    <img src="path/to/project-image.jpg" alt="Project Image">
-                    <div class="project-links">
-                        <a href="#">Publication</a>
-                        <a href="#">Code</a>
-                        <a href="#">Data</a>
-                        <a href="#">Talk</a>
-                    </div>
-                </div>
-                <div class="project-card collaborative show">
-                    <h3>RheMAP</h3>
-                    <p>Non-linear warps between common rhesus macaque brain templates.</p>
-                    <img src="path/to/project-image.jpg" alt="Project Image">
-                    <div class="project-links">
-                        <a href="#">Publication</a>
-                        <a href="#">Code</a>
-                        <a href="#">Data</a>
-                        <a href="#">Talk</a>
-                    </div>
-                </div>
-                <div class="project-card collaborative show">
-                    <h3>RheMAP</h3>
-                    <p>Non-linear warps between common rhesus macaque brain templates.</p>
-                    <img src="path/to/project-image.jpg" alt="Project Image">
-                    <div class="project-links">
-                        <a href="#">Publication</a>
-                        <a href="#">Code</a>
-                        <a href="#">Data</a>
-                        <a href="#">Talk</a>
-                    </div>
-                </div> -->
             </div>
         </section>
         <section id="now-reading">
@@ -331,37 +275,6 @@
                 <a href="#">Code</a>
               </div>
             </div>
-            <!-- <div class="reading-card">
-              <h3><a href="https://example.com/self-supervised-learning-cv" target="_blank">Advances in Self-Supervised Learning for Computer Vision</a></h3>
-              <p>Liam Wilson, Olivia Taylor, Ethan Harris, Ava Martin. 2022.</p>
-              <div class="reading-links">
-                <a href="#">Paper</a>
-                <a href="#">Slides</a>
-              </div>
-            </div>
-            <div class="reading-card"> 
-              <h3><a href="https://example.com/foundation-models-nlp" target="_blank">Foundation Models in Natural Language Processing: A Comprehensive Review</a></h3>
-              <p>Benjamin Clark, Charlotte Green, Daniel Patel, Emily Ross. 2023.</p>
-              <div class="reading-links">
-                <a href="#">Paper</a>
-              </div>
-            </div>
-            <div class="reading-card">
-              <h3><a href="https://example.com/interpretability-deep-learning" target="_blank">Interpreting and Explaining Deep Learning Models</a></h3>
-              <p>Alexander Wright, Ella Hall, Isaac Morris, Lily Chen. 2022.</p>
-              <div class="reading-links">  
-                <a href="#">Paper</a>
-                <a href="#">Code</a>
-                <a href="#">Slides</a>
-              </div>
-            </div>
-            <div class="reading-card">
-              <h3><a href="https://example.com/ai-ethics-challenges" target="_blank">Ethical Challenges in AI: Fairness, Accountability, and Transparency</a></h3>
-              <p>Gabriel Ortiz, Hannah Kim, Lucas Singh, Mia Patel. 2023.</p> 
-              <div class="reading-links">
-                <a href="#">Paper</a>
-                <a href="#">Talk</a>
-              </div> -->
             </div>
         </section>
     </main>
