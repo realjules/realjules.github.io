@@ -9,18 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --primary-color: #2563eb;
-            --primary-dark: #1d4ed8;
-            --secondary-color: #3b82f6;
-            --accent-color: #60a5fa;
-            --text-primary: #1f2937;
-            --text-secondary: #4b5563;
-            --background-light: #f3f4f6;
-            --card-background: #ffffff;
-            --header-gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-        }
-
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             margin: 0;
@@ -28,8 +16,179 @@
             text-align: center;
             font-size: 16px;
             line-height: 1.6;
-            color: var(--text-primary);
-            background-color: var(--background-light);
+        }
+        
+        header, nav, main, section {
+            padding: 10px;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 8px;
+        }
+        
+        nav {
+            background-color: #f2f2f2;
+            padding: 6px;
+        }
+        
+        nav.sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 6px;
+            font-weight: 500;
+        }
+        
+        main {
+            padding: 0px 350px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        
+        section {
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0 0 1rem;
+            letter-spacing: -0.025em;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin-right: 6px;
+        }
+        
+        .social-icons a svg {
+            fill: #fff;
+        }
+        
+        .interests {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 20px;
+        }
+        
+        .education {
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        .filter-buttons {
+            margin-bottom: 20px;
+        }
+
+        .filter-btn {
+            background-color: #e7e7e7;
+            border: none;
+            color: #333;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .filter-btn.active {
+            background-color: #333;
+            color: white;
+        }
+
+        .project-card {
+            background-color: #f1f1f1;
+            padding: 5px;
+            margin-bottom: 5px;
+            display: none;
+        }
+
+        .project-card.show {
+            display: block;
+        }
+
+        .project-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .project-links a {
+            display: inline-block;
+            margin-right: 5px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .project-card {
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .skill-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skill-list li {
+            display: inline-block;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            vertical-align: middle;
+            font-weight: 500;
+        }
+
+        .skill-list li img {
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+            vertical-align: middle;
         }
 
         header {
