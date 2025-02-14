@@ -5,155 +5,26 @@
     <link rel="icon" type="image/png" href="path/to/favicon.png">
     <meta name="description" content="Personal website of Jules Udahemuka, AI Researcher specializing in Multimodal Learning and Computer Vision.">
     <meta name="keywords" content="Jules Udahemuka, AI Research, Multimodal Learning, Computer Vision, Open Science">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <!-- Custom styles specific to this page -->
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            font-size: 13px; /* Increased font size */
-            line-height: 1.5; /* Adjusted line height */
-        }
-        header, nav, main, section {
-            padding: 10px; /* Increased padding for better spacing */
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 8px; /* Reduced padding */
-        }
-        nav {
-            background-color: #f2f2f2;
-            padding: 6px; /* Reduced padding */
-        }
-        
-        nav.sticky {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 999;
-        }
-        nav a {
-            text-decoration: none;
-            color: #333;
-            padding: 6px; /* Reduced padding */
-        }
-        main {
-            padding: 0px 350px; /* Increased left and right padding */
-            max-width: 800px; /* Set a maximum width for centering */
-            margin: 0 auto; /* Center the main content */
-            text-align: left; /* Align the main content to the left */
-        }
-        section {
-            margin-bottom: 10px; /* Reduced margin */
-        }
-
-        .social-icons a {
-            display: inline-block;
-            margin-right: 6px; /* Reduced margin */
-        }
-        .social-icons a svg {
-            fill: #fff; /* Change the fill color to white */
-        }
-        .interests {
-            display: inline-block;
-            vertical-align: top;
-            margin-right: 20px; /* Reduced spacing between columns */
-        }
-        .education {
-            display: inline-block;
-            vertical-align: top;
-        }
-        .filter-buttons {
-            margin-bottom: 20px;
-        }
-
-        .filter-btn {
-            background-color: #e7e7e7;
-            border: none;
-            color: #333;
-            padding: 8px 16px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 14px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
-
-        .filter-btn.active {
-            background-color: #333;
-            color: white;
-        }
-
-        .project-card {
-            background-color: #f1f1f1;
-            padding: 5px;
-            margin-bottom: 5px;
-            display: none; /* Initially hide all project cards */
-        }
-
         .project-card.show {
             display: block; /* Show project cards that match the filter */
         }
-
-        .project-card img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .project-links a {
-            display: inline-block;
-            margin-right: 5px;
-            text-decoration: none;
-            color: #333;
-        }
-
-        .project-card {
-            transition: transform 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .sticky-nav {
-            position: sticky;
-            top: 0;
-            z-index: 100;
+        
+        .social-icons a svg {
+            fill: #fff; /* Change the fill color to white */
         }
         
-        .skill-list {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .skill-list li {
-            display: inline-block;
-            margin-right: 20px;
-            margin-bottom: 10px;
-            vertical-align: middle;
-        }
-
-        .skill-list li img {
-            width: 24px;
-            height: 24px;
-            margin-right: 5px;
-            vertical-align: middle;
-        }
-        /* .info-container {
-            display: flex;
-            justify-content: space-between;
-            gap: 10px;
-            font-size: 14px;
-        }
-
+        /* Specific layout for interests and education sections */
         .interests, .education {
-            flex: 1;
-        } */
+            display: inline-block;
+            vertical-align: top;
+        }
         
+        .interests {
+            margin-right: 20px;
+        }
     </style>
 </head>
 <body>
