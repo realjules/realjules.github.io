@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jules Udahemuka - Personal Website</title>
     <link rel="icon" type="image/png" href="path/to/favicon.png">
     <meta name="description" content="Personal website of Jules Udahemuka, AI Researcher specializing in Multimodal Learning and Computer Vision.">
     <meta name="keywords" content="Jules Udahemuka, AI Research, Multimodal Learning, Computer Vision, Open Science">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
     <!-- Custom styles specific to this page -->
     <style>
         .project-card.show {
-            display: block; /* Show project cards that match the filter */
+            display: block;
         }
         
         .social-icons a svg {
-            fill: #fff; /* Change the fill color to white */
+            fill: #fff;
         }
         
-        /* Specific layout for interests and education sections */
         .interests, .education {
             display: inline-block;
             vertical-align: top;
@@ -25,7 +26,31 @@
         .interests {
             margin-right: 20px;
         }
+
+        .content-table {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-spacing: 0;
+            border-collapse: separate;
+        }
+
+        .content-cell {
+            padding: 20px;
+            vertical-align: top;
+        }
+
+        @media (max-width: 768px) {
+            .content-table {
+                display: block;
+            }
+            .content-cell {
+                display: block;
+                width: 100%;
+            }
+        }
     </style>
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header>
@@ -46,9 +71,12 @@
         <a href="#projects">Projects</a>
         <a href="#now-reading">Now Reading</a>
         <a href="https://realjules.substack.com/" target="_blank" rel="noopener noreferrer"><span>Blog</span></a>
-        <a href="https://github.com/julesuda/jules.github.io/blob/main/resume/jules_udahemuka_resume.pdf" target="_blank" rel="noopener noreferrer"><span>Resume</span></a>
+        <a href="assets/documents/resume/jules_udahemuka_resume.pdf" target="_blank" rel="noopener noreferrer"><span>Resume</span></a>
     </nav>
     <main>
+        <table class="content-table">
+            <tr>
+                <td class="content-cell">
         <section id="about-me">
             <h2>About Me</h2>
             <p>Hello! I’m Jules Udahemuka, an AI researcher with a deep curiosity for tackling complex challenges in SciML, climate, and geospatial intelligence. Currently, I’m pursuing a Master’s degree in Engineering Artificial Intelligence at Carnegie Mellon University.</p>
@@ -76,20 +104,19 @@
         <section id="skills">
             <h2>Skills</h2>
             <ul class="skill-list">
-                <li><img src="icons/python.png" alt="Python"> Python</li>
-                <li><img src="icons/tensorflow.svg" alt="TensorFlow"> TensorFlow</li>
-                <li><img src="icons/pytorch.svg" alt="PyTorch"> PyTorch</li>
-                <li><img src="icons/opencv.png" alt="OpenCV"> OpenCV</li>
-                <li><img src="icons/git.svg" alt="Git"> Git</li>
-                <li><img src="icons/lmms.svg" alt="Linux"> Transformers</li>
-                <!-- <li><img src="icons/docker.svg" alt="Docker"> Docker</li> -->
-                <li><img src="icons/ml.png" alt="Machine Learning"> Machine Learning</li>
-                <li><img src="icons/deep-learning.svg" alt="Deep Learning"> Deep Learning</li>
-                <li><img src="icons/sql.png" alt="SQL"> SQL</li>
-                <li><img src="icons/powerbi.png" alt="Power BI"> Power BI</li>
-                <li><img src="icons/dbt.svg" alt="dbt"> dbt</li>
-                <li><img src="icons/tableau.svg" alt="Tableau"> Tableau</li>
-                <li><img src="icons/research.svg" alt="Research"> Research</li>
+                <li><img src="assets/icons/python.png" alt="Python"> Python</li>
+                <li><img src="assets/icons/tensorflow.svg" alt="TensorFlow"> TensorFlow</li>
+                <li><img src="assets/icons/pytorch.svg" alt="PyTorch"> PyTorch</li>
+                <li><img src="assets/icons/opencv.png" alt="OpenCV"> OpenCV</li>
+                <li><img src="assets/icons/git.svg" alt="Git"> Git</li>
+                <li><img src="assets/icons/lmms.svg" alt="Linux"> Transformers</li>
+                <li><img src="assets/icons/ml.png" alt="Machine Learning"> Machine Learning</li>
+                <li><img src="assets/icons/deep-learning.svg" alt="Deep Learning"> Deep Learning</li>
+                <li><img src="assets/icons/sql.png" alt="SQL"> SQL</li>
+                <li><img src="assets/icons/powerbi.png" alt="Power BI"> Power BI</li>
+                <li><img src="assets/icons/dbt.svg" alt="dbt"> dbt</li>
+                <li><img src="assets/icons/tableau.svg" alt="Tableau"> Tableau</li>
+                <li><img src="assets/icons/research.svg" alt="Research"> Research</li>
             </ul>
         </section>
         <section id="projects">
@@ -121,7 +148,7 @@
                     <p>Implemented unsupervised anomaly detection algorithms and supervised fraud prediction models to enhance the security of USSD mobile money systems in Africa.</p>
                     <div class="project-links">
                         <a href="https://github.com/realjules/ussd_fraud_prediction" aria-label="Code for USSD security">Code</a>
-                        <a href="https://github.com/realjules/realjules.github.io/blob/main/documents/ussd_ml.pdf" aria-label="Data for USSD security">Data</a>
+                        <a href="assets/documents/ussd_ml.pdf" aria-label="Data for USSD security">Data</a>
                     </div>
                 </div>
                 <div class="project-card my-research show">
@@ -183,7 +210,9 @@
             </div>
             </div>
         </section>
+                </td>
+            </tr>
+        </table>
     </main>
-    <script src="script.js"></script>
 </body>
 </html>
