@@ -128,8 +128,8 @@ section h2 {
   margin-right: 8px;
 }
 
-/* Project cards */
-.project-card {
+/* Project and Reading Cards */
+.project-card, .reading-card {
   background-color: #fff;
   border-radius: 8px;
   padding: 20px;
@@ -138,17 +138,17 @@ section h2 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card:hover {
+.project-card:hover, .reading-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-.project-card h3 {
+.project-card h3, .reading-card h3 {
   color: #333;
   margin-top: 0;
 }
 
-.project-links a {
+.card-links a {
   display: inline-block;
   padding: 6px 12px;
   margin-right: 10px;
@@ -157,7 +157,7 @@ section h2 {
   transition: all 0.3s ease;
 }
 
-.project-links a:hover {
+.card-links a:hover {
   background-color: #333;
   color: #fff;
 }
@@ -198,33 +198,6 @@ section h2 {
 
 .social-icons a:hover {
   opacity: 1;
-}
-
-/* Reading section */
-.reading-card {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.reading-card h3 {
-  margin-top: 0;
-}
-
-.reading-links a {
-  display: inline-block;
-  padding: 4px 10px;
-  margin-right: 8px;
-  background-color: #f2f2f2;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-}
-
-.reading-links a:hover {
-  background-color: #333;
-  color: #fff;
 }
 
 /* Analytics Tracking Feedback */
@@ -287,7 +260,7 @@ section h2 {
     font-size: 13px;
   }
   
-  .project-card {
+  .project-card, .reading-card {
     padding: 15px;
   }
 
