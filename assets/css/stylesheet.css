@@ -41,6 +41,8 @@ header {
   color: #333;
   padding: 40px 20px;
   text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 header h1 {
