@@ -13,7 +13,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jules Udahemuka - Personal Website</title>
-    <link rel="icon" type="image/png" href="path/to/favicon.png">
     <meta name="description" content="Personal website of Jules Udahemuka, AI Researcher specializing in Machine Learning and Climate Science.">
     <meta name="keywords" content="Jules Udahemuka, AI Research, Scientific Machine Learning, Neural ODEs, Computer Vision, Research">
     
@@ -27,8 +26,6 @@
     <script src="js/main.js" defer></script>
 </head>
 <body>
-    <!-- Analytics Feedback -->
-    <div id="analyticsFeedback" class="analytics-feedback"></div>
     <header>
         <h1>Jules Udahemuka</h1>
         <p>AI Research - ML, Safety & SciML</p>
@@ -50,160 +47,151 @@
         <a href="assets/documents/resume/jules_udahemuka_resume.pdf" target="_blank" rel="noopener noreferrer"><span>Resume</span></a>
     </nav>
     <main>
-        <div class="container">
-            <div class="main-content">
-                <section id="about-me">
-                    <h2>About Me</h2>
-                    <p>I’m Jules, an AI researcher passionate about tackling complex challenges in Machine Learning, Scientific Machine Learning (SciML), climate science, and safety. Currently, I’m toward the end of Master’s in Artificial Intelligence at Carnegie Mellon University.</p>
-                    <p>My journey in AI has been fueled by a passion for applying advanced machine learning techniques to real-world problems. Whether it’s leveraging Python and SQL to build predictive models or creating interactive dashboards in Power BI and Tableau, I enjoy translating raw data into actionable insights that drive meaningful change.</p>
-                    <p>I’m a firm believer in the power of open science and collaboration. By sharing ideas and working collectively, I believe we can accelerate breakthroughs in AI and create solutions that benefit both people and the planet.</p>
-                    <div class="info-container">
-                        <div class="interests">
-                            <h3>Interests</h3>
-                            <ul>
-                                <li>Machine Learning; SciML, and Safety</li>
-                                <li>Climate Science, and Weather Prediction</li>
-                                <li>Foundation Research</li>
-                                <li>Open Science</li>
-                            </ul>
-                        </div>
-                        <div class="education">
-                            <h3>Education</h3>
-                            <ul>
-                                <li>&#127891; MSc in Artificial Intelligence, 2022 - 2024<br>Carnegie Mellon University</li>
-                                <li>&#127891; BSc in Environmental Engineering, 2017 - 2021<br>University of Rwanda</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section id="skills">
-                    <h2>Skills</h2>
-                    <ul class="skill-list">
-                        <li><img src="assets/icons/python.png" alt="Python"> Python</li>
-                        <li><img src="assets/icons/tensorflow.svg" alt="TensorFlow"> TensorFlow</li>
-                        <li><img src="assets/icons/pytorch.svg" alt="PyTorch"> PyTorch</li>
-                        <li><img src="assets/icons/opencv.png" alt="OpenCV"> OpenCV</li>
-                        <li><img src="assets/icons/git.svg" alt="Git"> Git</li>
-                        <li><img src="assets/icons/lmms.svg" alt="Linux"> Transformers</li>
-                        <li><img src="assets/icons/ml.png" alt="Machine Learning"> Machine Learning</li>
-                        <li><img src="assets/icons/deep-learning.svg" alt="Deep Learning"> Deep Learning</li>
-                        <li><img src="assets/icons/sql.png" alt="SQL"> SQL</li>
-                        <li><img src="assets/icons/powerbi.png" alt="Power BI"> Power BI</li>
-                        <li><img src="assets/icons/dbt.svg" alt="dbt"> dbt</li>
-                        <li><img src="assets/icons/tableau.svg" alt="Tableau"> Tableau</li>
-                        <li><img src="assets/icons/research.svg" alt="Research"> Research</li>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>I’m Jules, an AI researcher passionate about tackling complex challenges in Machine Learning, Scientific Machine Learning (SciML), climate science, and safety. Currently, I’m toward the end of Master’s in Artificial Intelligence at Carnegie Mellon University.</p>
+            <p>My journey in AI has been fueled by a passion for applying advanced machine learning techniques to real-world problems. Whether it’s leveraging Python and SQL to build predictive models or creating interactive dashboards in Power BI and Tableau, I enjoy translating raw data into actionable insights that drive meaningful change.</p>
+            <p>I’m a firm believer in the power of open science and collaboration. By sharing ideas and working collectively, I believe we can accelerate breakthroughs in AI and create solutions that benefit both people and the planet.</p>
+            <div class="info-container">
+                <div class="interests">
+                    <h3>Interests</h3>
+                    <ul>
+                        <li>Machine Learning; SciML, and Safety</li>
+                        <li>Climate Science, and Weather Prediction</li>
+                        <li>Foundation Research</li>
+                        <li>Open Science</li>
                     </ul>
-                </section>
-                <section id="projects">
-                    <h2>Projects</h2>
-                    <div class="filter-buttons">
-                        <button class="filter-btn" data-filter="all">All</button>
-                        <button class="filter-btn" data-filter="my-research">My Projects</button>
-                        <button class="filter-btn" data-filter="collaborative">Collaborative</button>
-                    </div>
-                    <div class="project-cards">
-                        <div class="project-card my-research collaborative show">
-                            <h3>Drones Computer Vision</h3>
-                            <p>Developed an open-source project for analyzing drone footage and applying computer vision techniques like YOLO and Faster R-CNN for real-time object detection and tracking.</p>
-                            <div class="card-links">
-                                <a href="https://github.com/realjules/drone_vision" aria-label="Code for Drone Vision">Code</a>
-                            </div>
-                        </div>
-                        <div class="project-card my-research show">
-                            <h3>Digital Twin for Climate Change</h3>
-                            <p>Created a digital twin framework using AI and simulation to model and visualize the potential impacts of climate change on the African continent.</p>
-                            <div class="card-links">
-                                <a href="https://github.com/realjules/africa_climate_simulation" aria-label="Code for Digital Twin">Code</a>
-                            </div>
-                        </div>
-                        <div class="project-card my-research show">
-                            <h3>Securing USSD Systems with Machine Learning</h3>
-                            <p>Implemented unsupervised anomaly detection algorithms and supervised fraud prediction models to enhance the security of USSD mobile money systems in Africa.</p>
-                            <div class="card-links">
-                                <a href="https://github.com/realjules/ussd_fraud_prediction" aria-label="Code for USSD security">Code</a>
-                                <a href="assets/documents/research-and-projects/ussd_ml.pdf" aria-label="Paper on USSD security">Paper</a>
-                            </div>
-                        </div>
-                        <div class="project-card my-research show">
-                            <h3>Medical Imaging Hackathon Winner ($3000 in Prizes)</h3>
-                            <p>At Nucleate Pittsburgh BioHack, I developed Monte Carlo dropout simulations for uncertainty estimation in medical imaging models and integrated large language models (LLMs) to generate evidence-based medical suggestions based on patient history and model output probabilities.</p>
-                            <div class="card-links">
-                                <a href="https://github.com/realjules/ml_oops_healthcare" aria-label="Code for Hackthon">Code</a>
-                                <a href="https://docs.google.com/presentation/d/16WoAg2rj22A4Fe6orb6Pkf-hs-FlyUIOGlPX3-Lv-_U/edit?usp=sharing" aria-label="Deck for Hackathon">Presentation</a>
-                            </div>
-                        </div>
-                        <div class="project-card my-research show">
-                            <h3>Neural ODEs for Regional Weather and Climate Prediction (Ongoing Research)</h3>
-                            <p>Developing a novel approach for downscaling global climate predictions using Neural ODEs. Leveraged domain-specific datasets and scalable architectures to enhance predictive accuracy for developing regions.</p>
-                            <div class="card-links">
-                                <a href="https://github.com/dataymeric/ClimODE" aria-label="Code for Neural ODEs">Code</a>
-                            </div>
-                        </div>
-                        <div class="project-card my-research show">
-                            <h3>Image Classification & Verification Using Improved ResNets(with SE, Attention Layer)</h3>
-                            <p>Implemented ResNet paper and improved it with SE and Transform layers for image classification and face verification, achieving a classification accuracy of 90%+ in both tasks.</p>
-                            <div class="card-links">
-                                <a href="https://github.com/realjules/image_classification" aria-label="Code for Image Classification">Code</a>
-                                <a href="https://github.com/realjules/image_classification/tree/main/papers" aria-label="Paper Implemented">Papers</a>
-                            </div>
-                        </div>
-                        <div class="project-card my-research show">
-                            <h3>The Growing Appetite: Artificial Intelligence's Impact on Electric Power Demand and Climate Implications</h3>
-                            <p>A research paper exploring the escalating electrical power consumption of AI, its environmental consequences, and potential mitigation strategies. This paper provides a comprehensive analysis of the technical drivers of AI's energy demand, its impact on power infrastructure, and the associated climate implications.</p>
-                            <div class="card-links">
-                                <a href="assets/documents/research-and-projects/AI_Power_Demand_Power.pdf" aria-label="View Paper">Paper</a>
-                            </div>
-                        </div>
-                        <div class="project-card my-research show">
-                            <h3>Atmospheric Circulation and Rainfall Patterns: Bridging Climate Science Fundamentals with Advanced Modeling Techniques</h3>
-                            <p>A review paper that provides a comprehensive overview of the fundamental principles governing atmospheric circulation and rainfall patterns, while also exploring the cutting-edge modeling approaches that promise to enhance our predictive capabilities.</p>
-                            <div class="card-links">
-                                <a href="assets/documents/research-and-projects/Atmospheric_Circulation_Paper.pdf" aria-label="View Paper">Paper</a>
-                            </div>
-                        </div>
-                        <div class="project-card my-research show">
-                            <h3>Enhancing Security in USSD-based Financial Systems: A Comprehensive Approach Leveraging Machine Learning, and Intelligent Agents.</h3>
-                            <p>A research project that develops a comprehensive framework to enhance the security of USSD-based financial systems against social engineering attacks and fraudulent activities. The framework leverages an ensemble of machine learning models and intelligent agents to provide a robust, adaptive, and interpretable solution.</p>
-                            <div class="card-links">
-                                <a href="assets/documents/research-and-projects/ussd_ml.pdf" aria-label="View Paper">Paper</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="now-reading">
-                    <h2>Now Reading</h2>
-                    <div class="reading-card">
-                        <h3>Foundations and Trends in Multimodal Machine Learning: Principles, Challenges, and Open Questions</h3>
-                        <p>Paul Pu Liang, Amir Zadeh, Louis-Philippe Morency. 2022.</p>
-                        <div class="card-links">
-                            <a href="https://arxiv.org/pdf/2209.03430">Paper</a>
-                            <a href="https://www.youtube.com/watch?v=DPkwjgaRvyI&list=PL-Fhd_vrvisMYs8A5j7sj8YW1wHhoJSmW">Talk</a>
-                        </div>
-                    </div>
-                    <div class="reading-card">
-                        <h3>Speech and Language Processing</h3>
-                        <p>Dan Jurafsky and James H. Martin. 2024.</p>
-                        <div class="card-links">
-                            <a href="https://stanford.edu/~jurafsky/slp3/" target="_blank">Book</a>
-                        </div>
-                    </div>
-                    <div class="reading-card">
-                        <h3>Attention Is All You Need</h3>
-                        <p>Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin. 2017.</p>
-                        <div class="card-links">
-                            <a href="https://arxiv.org/pdf/1706.03762">Paper</a>
-                            <a href="https://www.youtube.com/watch?v=kCc8FmEb1nY">Talk</a>
-                        </div>
-                    </div>
-                    <div class="reading-card">
-                        <h3>An Introduction to Variational Inference</h3>
-                        <div class="card-links">
-                            <a href="assets/documents/reading/2108.13083v3.pdf" target="_blank">Paper</a>
-                        </div>
-                    </div>
-                </section>
+                </div>
+                <div class="education">
+                    <h3>Education</h3>
+                    <ul>
+                        <li>&#127891; MSc in Artificial Intelligence, 2022 - 2024<br>Carnegie Mellon University</li>
+                        <li>&#127891; BSc in Environmental Engineering, 2017 - 2021<br>University of Rwanda</li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skill-list">
+                <li><img src="assets/icons/python.png" alt="Python"> Python</li>
+                <li><img src="assets/icons/tensorflow.svg" alt="TensorFlow"> TensorFlow</li>
+                <li><img src="assets/icons/pytorch.svg" alt="PyTorch"> PyTorch</li>
+                <li><img src="assets/icons/opencv.png" alt="OpenCV"> OpenCV</li>
+                <li><img src="assets/icons/git.svg" alt="Git"> Git</li>
+                <li><img src="assets/icons/lmms.svg" alt="Linux"> Transformers</li>
+                <li><img src="assets/icons/ml.png" alt="Machine Learning"> Machine Learning</li>
+                <li><img src="assets/icons/deep-learning.svg" alt="Deep Learning"> Deep Learning</li>
+                <li><img src="assets/icons/sql.png" alt="SQL"> SQL</li>
+                <li><img src="assets/icons/powerbi.png" alt="Power BI"> Power BI</li>
+                <li><img src="assets/icons/dbt.svg" alt="dbt"> dbt</li>
+                <li><img src="assets/icons/tableau.svg" alt="Tableau"> Tableau</li>
+                <li><img src="assets/icons/research.svg" alt="Research"> Research</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-cards">
+                <div class="project-card">
+                    <h3>Drones Computer Vision</h3>
+                    <p>Developed an open-source project for analyzing drone footage and applying computer vision techniques like YOLO and Faster R-CNN for real-time object detection and tracking.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/realjules/drone_vision" aria-label="Code for Drone Vision">View Code</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Digital Twin for Climate Change</h3>
+                    <p>Created a digital twin framework using AI and simulation to model and visualize the potential impacts of climate change on the African continent.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/realjules/africa_climate_simulation" aria-label="Code for Digital Twin">View Code</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Securing USSD Systems with Machine Learning</h3>
+                    <p>Implemented unsupervised anomaly detection algorithms and supervised fraud prediction models to enhance the security of USSD mobile money systems in Africa.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/realjules/ussd_fraud_prediction" aria-label="Code for USSD security">View Code</a>
+                        <a href="assets/documents/research-and-projects/ussd_ml.pdf" aria-label="Paper on USSD security">Read Paper</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Medical Imaging Hackathon Winner ($3000 in Prizes)</h3>
+                    <p>At Nucleate Pittsburgh BioHack, I developed Monte Carlo dropout simulations for uncertainty estimation in medical imaging models and integrated large language models (LLMs) to generate evidence-based medical suggestions based on patient history and model output probabilities.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/realjules/ml_oops_healthcare" aria-label="Code for Hackthon">View Code</a>
+                        <a href="https://docs.google.com/presentation/d/16WoAg2rj22A4Fe6orb6Pkf-hs-FlyUIOGlPX3-Lv-_U/edit?usp=sharing" aria-label="Deck for Hackathon">View Presentation</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Neural ODEs for Regional Weather and Climate Prediction (Ongoing Research)</h3>
+                    <p>Developing a novel approach for downscaling global climate predictions using Neural ODEs. Leveraged domain-specific datasets and scalable architectures to enhance predictive accuracy for developing regions.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/dataymeric/ClimODE" aria-label="Code for Neural ODEs">View Code</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Image Classification & Verification Using Improved ResNets(with SE, Attention Layer)</h3>
+                    <p>Implemented ResNet paper and improved it with SE and Transform layers for image classification and face verification, achieving a classification accuracy of 90%+ in both tasks.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/realjules/image_classification" aria-label="Code for Image Classification">View Code</a>
+                        <a href="https://github.com/realjules/image_classification/tree/main/papers" aria-label="Paper Implemented">Read Papers</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>The Growing Appetite: Artificial Intelligence's Impact on Electric Power Demand and Climate Implications</h3>
+                    <p>A research paper exploring the escalating electrical power consumption of AI, its environmental consequences, and potential mitigation strategies. This paper provides a comprehensive analysis of the technical drivers of AI's energy demand, its impact on power infrastructure, and the associated climate implications.</p>
+                    <div class="card-links">
+                        <a href="assets/documents/research-and-projects/AI_Power_Demand_Power.pdf" aria-label="View Paper">Read Paper</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Atmospheric Circulation and Rainfall Patterns: Bridging Climate Science Fundamentals with Advanced Modeling Techniques</h3>
+                    <p>A review paper that provides a comprehensive overview of the fundamental principles governing atmospheric circulation and rainfall patterns, while also exploring the cutting-edge modeling approaches that promise to enhance our predictive capabilities.</p>
+                    <div class="card-links">
+                        <a href="assets/documents/research-and-projects/Atmospheric_Circulation_Paper.pdf" aria-label="View Paper">Read Paper</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Enhancing Security in USSD-based Financial Systems: A Comprehensive Approach Leveraging Machine Learning, and Intelligent Agents.</h3>
+                    <p>A research project that develops a comprehensive framework to enhance the security of USSD-based financial systems against social engineering attacks and fraudulent activities. The framework leverages an ensemble of machine learning models and intelligent agents to provide a robust, adaptive, and interpretable solution.</p>
+                    <div class="card-links">
+                        <a href="assets/documents/research-and-projects/ussd_ml.pdf" aria-label="View Paper">Read Paper</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="now-reading">
+            <h2>Now Reading</h2>
+            <div class="reading-card">
+                <h3>Foundations and Trends in Multimodal Machine Learning: Principles, Challenges, and Open Questions</h3>
+                <p>Paul Pu Liang, Amir Zadeh, Louis-Philippe Morency. 2022.</p>
+                <div class="card-links">
+                    <a href="https://arxiv.org/pdf/2209.03430">Read Paper</a>
+                    <a href="https://www.youtube.com/watch?v=DPkwjgaRvyI&list=PL-Fhd_vrvisMYs8A5j7sj8YW1wHhoJSmW">Watch Talk</a>
+                </div>
+            </div>
+            <div class="reading-card">
+                <h3>Speech and Language Processing</h3>
+                <p>Dan Jurafsky and James H. Martin. 2024.</p>
+                <div class="card-links">
+                    <a href="https://stanford.edu/~jurafsky/slp3/" target="_blank">Read Book</a>
+                </div>
+            </div>
+            <div class="reading-card">
+                <h3>Attention Is All You Need</h3>
+                <p>Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin. 2017.</p>
+                <div class="card-links">
+                    <a href="https://arxiv.org/pdf/1706.03762">Read Paper</a>
+                    <a href="https://www.youtube.com/watch?v=kCc8FmEb1nY">Watch Talk</a>
+                </div>
+            </div>
+            <div class="reading-card">
+                <h3>An Introduction to Variational Inference</h3>
+                <div class="card-links">
+                    <a href="assets/documents/reading/2108.13083v3.pdf" target="_blank">Read Paper</a>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
