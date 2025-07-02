@@ -130,7 +130,7 @@ section h2 {
 }
 
 /* Project and Reading Cards */
-.project-card, .reading-card {
+.project-card {
   background-color: #fff;
   border: none;
   padding: 0;
@@ -138,6 +138,14 @@ section h2 {
   box-shadow: none;
   display: flex;
   gap: 20px;
+}
+
+.reading-card {
+  background-color: #fff;
+  border: none;
+  padding: 0;
+  margin-bottom: 25px;
+  box-shadow: none;
 }
 
 .project-image {
