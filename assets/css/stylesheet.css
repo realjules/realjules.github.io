@@ -95,6 +95,7 @@ section {
   background-color: #fff;
   border: none;
   box-shadow: none;
+  scroll-margin-top: 80px;
 }
 
 section h2 {
