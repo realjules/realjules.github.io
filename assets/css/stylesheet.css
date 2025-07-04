@@ -248,3 +248,32 @@ section h2 {
     height: 200px;
   }
 }
+
+/* GitHub Activity Section */
+.github-activity {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.github-activity h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.github-activity img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .github-activity {
+    margin-top: 20px;
+  }
+  
+  .github-activity h3 {
+    font-size: 16px;
+  }
+}
