@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - Jules.AI</title>
+    <link rel="icon" href="assets/icons/logo_optimized.png" type="image/png">
+    <meta name="description" content="The page you're looking for doesn't exist. Return to Jules Udahemuka's portfolio.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            background-color: #fff;
+        }
+        
+        .error-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .error-code {
+            font-size: 6rem;
+            font-weight: 700;
+            color: #1772d0;
+            margin: 0;
+            line-height: 1;
+        }
+        
+        .error-title {
+            font-size: 2rem;
+            color: #333;
+            margin: 1rem 0;
+        }
+        
+        .error-message {
+            font-size: 1.1rem;
+            color: #666;
+            margin: 1.5rem 0;
+            line-height: 1.6;
+        }
+        
+        .error-actions {
+            margin-top: 2rem;
+        }
+        
+        .error-actions a {
+            display: inline-block;
+            margin: 0 1rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #1772d0;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .error-actions a:hover {
+            background-color: #1560b0;
+        }
+        
+        .error-actions a.secondary {
+            background-color: transparent;
+            color: #1772d0;
+            border: 2px solid #1772d0;
+        }
+        
+        .error-actions a.secondary:hover {
+            background-color: #1772d0;
+            color: white;
+        }
+        
+        .error-suggestions {
+            margin-top: 3rem;
+            padding: 2rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            text-align: left;
+        }
+        
+        .error-suggestions h3 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        
+        .error-suggestions ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .error-suggestions li {
+            margin: 0.5rem 0;
+        }
+        
+        .error-suggestions a {
+            color: #1772d0;
+            text-decoration: none;
+        }
+        
+        .error-suggestions a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 4rem;
+            }
+            
+            .error-title {
+                font-size: 1.5rem;
+            }
+            
+            .error-actions a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-page">
+        <div class="error-content">
+            <h1 class="error-code">404</h1>
+            <h2 class="error-title">Page Not Found</h2>
+            <p class="error-message">
+                The page you're looking for doesn't exist. It might have been moved, deleted, or you entered the wrong URL.
+            </p>
+            
+            <div class="error-actions">
+                <a href="/">Go Home</a>
+                <a href="javascript:history.back()" class="secondary">Go Back</a>
+            </div>
+            
+            <div class="error-suggestions">
+                <h3>Popular Pages</h3>
+                <ul>
+                    <li><a href="/#about-me">About Me</a></li>
+                    <li><a href="/#projects">Research & Projects</a></li>
+                    <li><a href="/#skills">Skills & Expertise</a></li>
+                    <li><a href="/#contact">Contact</a></li>
+                    <li><a href="https://realjules.substack.com/" target="_blank" rel="noopener noreferrer">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Track 404 errors for analytics
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'page_not_found', {
+                'page_location': window.location.href,
+                'page_referrer': document.referrer
+            });
+        }
+        
+        // Optional: Auto-redirect after 10 seconds
+        setTimeout(() => {
+            const notification = document.createElement('div');
+            notification.textContent = 'Redirecting to homepage in 10 seconds...';
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: #1772d0;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+                z-index: 1000;
+            `;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                window.location.href = '/';
+            }, 10000);
+        }, 5000);
+    </script>
+</body>
+</html>
