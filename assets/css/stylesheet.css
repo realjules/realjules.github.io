@@ -24,15 +24,20 @@ body {
   background-color: #fff;
 }
 
-/* Links */
+/* Links - Enhanced color contrast for WCAG AA compliance */
 a {
-  color: #1772d0;
+  color: #1a365d;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
+  color: #2c5aa0;
   text-decoration: underline;
+}
+
+a:active {
+  color: #1a365d;
 }
 
 /* Header */
@@ -185,12 +190,13 @@ section h2 {
   padding: 0;
   margin-right: 15px;
   background-color: transparent;
-  color: #1772d0;
+  color: #1a365d;
   font-weight: bold;
 }
 
 .card-links a:hover {
   background-color: transparent;
+  color: #2c5aa0;
   text-decoration: underline;
 }
 
@@ -275,5 +281,488 @@ section h2 {
   
   .github-activity h3 {
     font-size: 16px;
+  }
+}
+
+/* Accessibility enhancements - Enhanced skip navigation */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: #1a365d;
+  color: #ffffff;
+  padding: 12px 16px;
+  text-decoration: none;
+  z-index: 10000;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.skip-link:focus {
+  top: 6px;
+  outline: 3px solid #2c5aa0;
+  outline-offset: 2px;
+}
+
+.skip-link:hover {
+  background: #2c5aa0;
+  transform: translateY(-1px);
+}
+
+/* GitHub chart fallback */
+.github-chart-fallback {
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin: 10px 0;
+  border: 1px solid #dee2e6;
+}
+
+.github-chart-fallback p {
+  margin: 0 0 10px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.github-chart-fallback a {
+  color: #1a365d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.github-chart-fallback a:hover {
+  color: #2c5aa0;
+  text-decoration: underline;
+}
+
+/* Enhanced focus indicators for better accessibility */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 3px solid #2c5aa0;
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* High contrast focus indicators for better visibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid #2c5aa0;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 1px #ffffff, 0 0 0 4px #2c5aa0;
+}
+
+/* Navigation link focus indicators */
+nav a:focus,
+nav a:focus-visible {
+  outline: 3px solid #2c5aa0;
+  outline-offset: 2px;
+  background-color: #f0f4f8;
+  color: #1a365d;
+  border-radius: 4px;
+}
+
+/* Social media icon focus indicators */
+.social-icons a:focus,
+.social-icons a:focus-visible,
+.social-links a:focus,
+.social-links a:focus-visible {
+  outline: 3px solid #2c5aa0;
+  outline-offset: 2px;
+  background-color: #f0f4f8;
+  border-radius: 6px;
+}
+
+/* Project card link focus indicators */
+.card-links a:focus,
+.card-links a:focus-visible {
+  outline: 3px solid #2c5aa0;
+  outline-offset: 2px;
+  background-color: #f0f4f8;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Performance optimization - will-change for sticky nav */
+nav.sticky {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Improved loading state for images */
+img {
+  transition: opacity 0.3s ease;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: 'Lato', Arial, sans-serif;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #2c5aa0;
+  box-shadow: 0 0 0 3px rgba(44, 90, 160, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-button {
+  background-color: #2c5aa0;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: 'Lato', Arial, sans-serif;
+}
+
+.submit-button:hover {
+  background-color: #1a365d;
+  transform: translateY(-1px);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 5px;
+  display: none;
+}
+
+.error-message.show {
+  display: block;
+}
+
+.form-group.error input,
+.form-group.error textarea {
+  border-color: #dc3545;
+}
+
+.form-status {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  display: none;
+}
+
+.form-status.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  display: block;
+}
+
+.form-status.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  display: block;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #eee;
+  padding: 40px 20px 20px;
+  margin-top: 60px;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-section h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-section p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  margin-bottom: 8px;
+}
+
+.contact-info a {
+  color: #1a365d;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #2c5aa0;
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #333;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #e9ecef;
+  text-decoration: none;
+}
+
+.social-links a svg {
+  fill: #333;
+  flex-shrink: 0;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-nav a {
+  color: #666;
+  text-decoration: none;
+  padding: 4px 0;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #1a365d;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.github-activity-footer {
+  flex: 1;
+  text-align: center;
+}
+
+.github-activity-footer h4 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.github-activity-footer img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.copyright {
+  text-align: center;
+  color: #666;
+  flex-shrink: 0;
+}
+
+.copyright p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Responsive Design for Contact Form and Footer */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 0 10px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+  
+  footer {
+    padding: 30px 15px 15px;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .github-activity-footer {
+    order: 2;
+  }
+  
+  .copyright {
+    order: 1;
+  }
+  
+  .social-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .social-links a {
+    flex-direction: column;
+    text-align: center;
+    min-width: 80px;
+    padding: 10px;
+  }
+  
+  .footer-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    gap: 20px;
+  }
+  
+  .footer-section h3 {
+    font-size: 16px;
+  }
+  
+  .social-links a {
+    min-width: 70px;
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .github-activity-footer h4 {
+    font-size: 14px;
+  }
+}
+
+/* Visually hidden class for screen readers */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Ensure sufficient color contrast for high contrast mode */
+@media (prefers-contrast: high) {
+  a {
+    color: #000080;
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    color: #0000ff;
+  }
+  
+  .submit-button {
+    background-color: #000080;
+    border: 2px solid #000000;
+  }
+  
+  .submit-button:hover {
+    background-color: #0000ff;
+  }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
